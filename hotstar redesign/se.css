@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#sticky{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    z-index: -1;
+}
+#rear{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    background-size: cover;
+    background-image: url(disney.jpg);
+
+}
+.sbox{
+    width: 650px;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #ffffffdb;
+    color: black;
+    border-radius: 20px;
+    border-style: none;
+    margin-bottom: 30px;
+
+}
+#det{
+    padding: 7px;
+    border-radius: 10px;
+    margin: 5px;
+    color: #000aff;
+    background-color: #ffffffdb;
+    text-decoration: none
+}
+#det:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+   background-color: #505cffd6;
+   color: white;
+}
+#prop{
+    top: 600px;
+    position: relative;   
+    height: 60px;
+    background-image: linear-gradient(0deg, #161616,#161616db, transparent);
+}
+#trend{
+    top: 58px;
+    width: 100%;
+    height: fit-content;
+    color: white;
+    background-color: #161616;
+    position: relative;
+}
+.wrapper{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+    background-color: #212121;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+#i1{
+height: 200px;
+border-radius: 20px;
+}
+
+.wrapper:hover{
+    transform: scale(1.1);
+}
+
+#name{
+    color: white;
+    padding: 5px;
+    display: block;
+}
+#swipe{
+    height: 30px;
+    position: absolute;
+    width: 100px;
+    background-color: #9090902e;
+    color: #ffffff;
+    font-size: medium;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: white;
+}
+.on{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    position: absolute;
+    align-items: center;
+}
+
+.end{
+    margin-top: 58px;
+    justify-content: center;
+    align-items: center;
+    background-color: #27282c;
+    display: flex;
+    padding: 30px;
+    gap: 70px;
+}
+.ui{
+    position: relative;
+    background: #fff;
+display: flex;
+    padding: 5px;
+    transition: 0.5s;
+
+}
+.ui:hover{
+    background: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+    color:var(--clr);
+    transform: scale(1.1);
+}
+.ui::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+
+}
+.ui .im{
+    position: relative;
+    z-index: 1;
+height: 80px;
+}
+.ui i{
+    position: absolute;
+    inset: 0;
+    display: block;
+
+}
+.ui i::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:80%;
+    width: 10px;
+    height: 4px;
+background: #27282c;
+transform: translateX(-50%) skewX(325deg);
+transition: 0.5s;
+}
+.ui:hover i::before{
+    width: 20px;
+    left: 20%;
+}
+.ui i::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:20%;
+    width: 10px;
+    height: 4px;
+background: #27282c;
+transform: translateX(-50%) skewX(325deg);
+transition: 0.5s;
+}
+.ui:hover i::after{
+    width: 20px;
+    left: 80%;
+}
